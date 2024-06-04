@@ -1,18 +1,33 @@
-# kurs
+# Matsmart
 
-hejsfksal salkf askfaslkf fg fgf gfg
+## Introduktion
 
+Text
 
-dflsd lfjdslöfds
+## Validering av HTML
 
-> HEj
+Text
 
-## Underrubrik ala H2
+## Validering av CSS
 
-- we
-- 34
-- 3434
+Text
 
-1.  sdfds
-2.  etrrfg
-3.  3434
+## Kontroll i Lighthouse
+
+Text
+
+## Desktop vs. Mobile
+
+Text
+
+## Plan vs resultatet
+
+Text
+
+## Teckenkoding
+
+UTF-8
+
+## Etik på en receptsida
+
+Finns det något problem med namn på maträtter/efterrätter?
