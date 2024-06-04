@@ -28,5 +28,4 @@ Det kan uppstå vissa problem när det gäller namngivning på olika saker som e
 Ett exempel skulle kunna vara vad man kallade Chockladbollar förr i tiden här i sverige, det hade varit väldigt olämpligt nu för tiden att skriva det ordet.
 
 ## Upphovsrätt
-
-Varför bilder från Unsplash?
+Jag har även tagit alla mina bilder från Unsplash för att följa upphovsrätten. Om jag hade tagit bilder fårn internet finns det risk för att bli stämd eller något i den stilen.
