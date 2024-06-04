@@ -1,0 +1,582 @@
+:root {
+    --radius: 60px;
+    --radius-big: 200px;
+    --gap: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100dvh;
+}
+
+/* ********** GLOBAL NAV *********** */
+.En {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: green;
+
+    display: flex; 
+}
+
+.En ul {
+    margin: 0;
+    padding: 0;
+
+    margin-left: 100px;
+}
+
+
+.En ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.En  ul li {
+    list-style: none;
+    font-size: 18px;
+}
+
+.En  ul li a {
+    text-decoration: none;
+    color: rgb(255, 240, 243);
+    font-weight: bold;
+
+    display: block;
+    padding: 1rem;  
+
+    &:hover {
+        background-color: rgb(255, 240, 243);
+        color: green;
+    }
+}
+
+ .one{
+    color: rgb(255, 192, 71);
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    display: flex;
+}
+
+.one img {
+    width: 50px;
+    align-self: center;
+}
+
+.one > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/* **************** START INDEX **************** */
+
+.start {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.start .Två {
+    background: url("../images/startBg.jpg")  no-repeat center center fixed;
+    background-size: cover;
+    padding: 1rem;
+    min-height: 500px;
+}
+
+.start h2{
+    color: white;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    font-family: "Josefin Sans", sans-serif;
+    text-shadow: 0 0 10px black;
+    rotate: -0.75deg;
+}
+/* ****************Inte min kod****************************** */
+
+    /* *****************Inte min kod**************************************' */
+
+ .Fyra {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    column-gap: 190px;
+
+    grid-column: 1 / -1;
+
+    padding-top: 1rem;
+}
+
+.Fyra a {
+    text-decoration: none;
+}
+
+.Fyra a:hover {
+    text-decoration: underline;
+}
+
+/* ******Slutspel********************************************************************** */
+.Slutspel > a{
+    color: inherit;
+}
+.Slutspel{
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.Slutspel ul{
+    list-style-type: none;
+}
+
+.hSlutspel{
+    margin: 0;
+}
+
+.List1 {
+    padding: 0;
+}
+
+.List1 li{
+    list-style-type: none;
+}
+
+.Fyra h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.List2 li{
+    list-style-type: none;
+}
+
+.List2 h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.List3{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+
+    max-width: 400px;
+
+    padding: 0;
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+}
+
+.List3 h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.List3 img{
+    width: 16px;
+    height: auto;
+}
+
+
+
+
+/* ************** RECEPT *********** */
+.Recept{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 5rem;
+
+    min-height: 100dvh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.matbild img {
+    width: 100%;
+    display: block;
+    height: 600px;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.mattext {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    padding-left: 20px;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.mattext p{
+    font-weight: bold;
+    width: 70%;
+   line-height: 1.4;
+   margin: 0;
+   padding: 0;
+   margin-top: 0px;
+   font-family: "Nunito", sans-serif;
+}
+
+.mattext h1{
+    font-weight: bold;
+    padding: 0;
+}
+
+/* ***************Delvis min kod*********************** */
+
+.receptare {
+    padding: var(--gap);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.receptare h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.receptare li{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.knappar {
+    display: grid;
+    grid-template-columns: auto 14ch auto;
+    align-items: center;
+    justify-items: center;
+    column-gap: var(--gap);
+    width: max-content;
+}
+
+.knappar p{
+    font-size: 20px;
+}
+
+.knappar > * {
+    margin: 0;
+}
+
+.ingredienser {
+    margin: 0;
+    padding-left: var(--gap);
+    font-family: "Nunito", sans-serif;
+}
+
+/* ***************Delvis min kod******************* */
+.mattodo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    padding-left: 10px;
+}
+
+.mattodo li{
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.mattodo h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.mattodo ul > li:last-of-type{
+    color:red;
+    font-weight: bold;
+}
+
+.Göralista li::marker{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.Göralista li{
+    font-family: "Nunito", sans-serif;
+}
+
+/* ************** RECEPTET *********** */
+
+
+
+/* **************Om Oss******************** */
+
+.Om{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    color: white;
+
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.Om h2 {
+    font-size: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+}
+
+.Om > * {
+    height: 100vh;
+}
+
+.Om .Omoss {
+    background-color: aquamarine;
+    background: url("../images/testnu.jpg")  no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.Natur {
+    background: url("../images/omosss.jpg")  no-repeat center center;
+    background-size: cover;
+
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.Nyttigt{
+    background-color: green;
+    margin: 0;
+    padding: 0;
+
+    background: url("../images/a.webp")  no-repeat center center;
+    background-size: cover;
+}
+
+/* **************Om Oss******************** */
+
+.fusk {
+    background-color: rgba(133, 129, 123, 0.651);
+    height: calc(100% - 2rem);
+    max-width: 60ch;
+    padding: 1rem;
+
+    margin: 1rem;
+}
+
+.Om1{
+    display: grid;
+    grid-template-columns: 1fr;
+    color: white;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.Om1 h2 {
+    font-size: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+}
+
+.Om1 > * {
+    height: 100vh;
+}
+
+.Om1 .Omoss1 {
+    background-color: aquamarine;
+    background: url("../images/hå1.webp")  no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.Natur1 {
+    background: url("../images/hå2.webp")  no-repeat center center;
+    background-size: cover;
+
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.Nyttigt1{
+    background-color: green;
+    margin: 0;
+    padding: 0;
+
+    background: url("../images/hå3.webp")  no-repeat center center;
+    background-size: cover;
+}
+
+/* **************Om Oss******************** */
+
+.fusk1 {
+    background-color: rgba(133, 129, 123, 0.651);
+    height: calc(100% - 2rem);
+    max-width: 60ch;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
+
+/* **************SLIDER SOM VI HAR KOPIEARAÖLÄETSÖLJSAGF ******************* */
+
+/* https://www.testkarts.com/blog/horizontal-card-scroll-with-arrow */
+
+.cover {
+    position: relative;
+    padding: 0px 30px;
+    /* margin-top: 100px; */
+
+    /* border: 1px solid #000; */
+   width: 98vw ;
+   margin: 0 auto; 
+   /* height: 800px; */
+}
+
+.cover .left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.cover .right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    transform: translateY(-50%);
+}
+
+.cover .scroll-images {
+    position: relative;
+    padding: 40px 0px;
+
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.cover .child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 360px;
+    /* height: 200px; */
+
+    padding: 0px 15px;
+    margin: 1px 10px;
+
+    overflow: hidden;
+
+    position: relative;
+    /* border: 1px solid #f1f1f1; */
+
+    /* -webkit-box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%); */
+    /* box-shadow: 0px 0px 15px 2px rgb(0 0 0 / 10%); */
+}
+
+.child a {
+    height: 200px;
+}
+
+.child img {
+    height: 100%;
+}
+
+.child h4{
+font-size: 25px; 
+margin: 1rem;
+margin-bottom: -2px;
+font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+/* .cover .child > h4 {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+
+    margin: 0;
+    padding: 1rem;
+
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    background-color: rgba(213, 8, 8, 0.633);
+} */
+
+.cover .child .scroll-images::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #aaa;
+}
+
+.cover .scroll-images::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.cover button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+}

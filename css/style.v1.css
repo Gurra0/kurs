@@ -1,0 +1,506 @@
+:root {
+    --radius: 60px;
+    --radius-big: 200px;
+    --gap: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    min-height: 100dvh;
+}
+
+/* main {
+    margin-top: 80px;
+} */
+
+/* ********** GLOBAL NAV *********** */
+.En {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background-color: green;
+
+    display: flex; 
+
+    /* position: fixed;
+    width: 100%; */
+    
+}
+
+.En ul {
+    margin: 0;
+    padding: 0;
+
+    margin-left: 100px;
+}
+
+
+.En ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px
+}
+
+.En  ul li {
+    list-style: none;
+    /* margin-left: 80px;
+    margin-top: 25px; */
+    font-size: 18px;
+}
+
+.En  ul li a {
+    text-decoration: none;
+    /* color: rgb(255, 223, 229); */
+    color: rgb(255, 240, 243);
+    font-weight: bold;
+
+    display: block;
+    padding: 1rem;  
+
+    &:hover {
+        background-color: rgb(255, 240, 243);
+        color: green;
+    }
+}
+
+ .one{
+    /* color: orange; */
+    /* color: rgb(255, 179, 39); */
+    color: rgb(255, 192, 71);
+    font-size: 3rem;
+    padding: 1rem 2rem;
+
+    display: flex;
+}
+
+.one img {
+    width: 50px;
+    align-self: center;
+}
+
+.one > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo {
+    font-family: "Irish Grover", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/* **************** START INDEX **************** */
+
+.start {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.start .Två {
+    /* grid-column: 1/-1;
+    grid-row: 2/3; */
+    /* background-color: orange; */
+    background: url("../images/startBg.jpg")  no-repeat center center fixed;
+    background-size: cover;
+    padding: 1rem;
+    min-height: 500px;
+}
+
+.start h2{
+    color: white;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    font-family: "Josefin Sans", sans-serif;
+}
+/* ****************Inte min kod****************************** */
+
+    /* *****************Inte min kod**************************************' */
+
+ .Fyra {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    column-gap: 190px;
+
+    grid-column: 1 / -1;
+
+    padding-top: 1rem;
+}
+
+.Fyra a {
+    text-decoration: none;
+}
+
+.Fyra a:hover {
+    text-decoration: underline;
+}
+
+/* .Fyra > * {
+    border: 1px solid red;
+} */
+
+/* ******Slutspel********************************************************************** */
+.Slutspel > a{
+    color: inherit;
+}
+.Slutspel{
+    margin-bottom: 6px;
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.Slutspel ul{
+    list-style-type: none;
+}
+
+.hSlutspel{
+    margin: 0;
+}
+
+.List1 {
+    padding: 0;
+}
+
+.List1 li{
+    list-style-type: none;
+}
+
+.Fyra h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.List2 li{
+    list-style-type: none;
+}
+
+.List2 h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.List3{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+
+    max-width: 400px;
+
+    padding: 0;
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+}
+
+.List3 h1{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.List3 img{
+    /* width: 2%; */
+    width: 16px;
+    height: auto;
+}
+
+
+
+
+/* ************** RECEPT *********** */
+.Recept{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 5rem;
+
+    min-height: 100dvh;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.matbild img {
+    width: 100%;
+    display: block;
+    height: 600px;
+    border-top-left-radius: var(--radius);
+    border-bottom-left-radius: var(--radius);
+}
+
+.mattext {
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    padding-left: 20px;
+    border-top-right-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+}
+
+.mattext p{
+    font-weight: bold;
+    width: 70%;
+   /* line-height: 25px; */
+   /* font-size: 40px; */
+   line-height: 1.4;
+   margin: 0;
+   padding: 0;
+   margin-top: 0px;
+   font-family: "Nunito", sans-serif;
+}
+
+.mattext h1{
+    font-weight: bold;
+    /* margin: 0; */
+    padding: 0;
+}
+
+/* ***************Delvis min kod*********************** */
+
+.receptare {
+    /* background-color: yellowgreen; */
+    padding: var(--gap);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+}
+
+.receptare h2{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.receptare li{
+    /* margin: 0;
+    padding: 0;
+    margin-top: 0px; */
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.knappar {
+    display: grid;
+    grid-template-columns: auto 14ch auto;
+    align-items: center;
+    justify-items: center;
+    column-gap: var(--gap);
+
+    width: max-content;
+
+    /* border: 1px solid #000; */
+}
+
+.knappar p{
+    font-size: 20px;
+}
+
+.knappar > * {
+    margin: 0;
+}
+
+.ingredienser {
+    /* border: 1px solid #000; */
+    margin: 0;
+    padding-left: var(--gap);
+    font-family: "Nunito", sans-serif;
+}
+
+/* ***************Delvis min kod******************* */
+.mattodo {
+    /* background-color: lightgrey; */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    padding-left: 10px;
+}
+
+.mattodo li{
+    margin: 0;
+    padding: 0;
+    margin-top: 0px;
+    font-size: 20px;
+}
+
+.mattodo h2{
+    /* padding-left: 22px; */
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+}
+
+.mattodo ul > li:last-of-type{
+    color:red;
+    font-weight: bold;
+}
+
+.Göralista li::marker{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.Göralista li{
+    font-family: "Nunito", sans-serif;
+}
+
+/* ************** RECEPTET *********** */
+
+
+
+/* **************Om Oss******************** */
+
+.Om{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    color: white;
+
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.Om h2 {
+    font-size: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+}
+
+.Om > * {
+    height: 100vh;
+}
+
+.Om .Omoss {
+    background-color: aquamarine;
+    /* background: url("../images/b.webp")  no-repeat center center; */
+    background: url("../images/testnu.jpg")  no-repeat center center;
+    background-size: cover;
+    
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* .Omoss p{
+    color: white;
+    line-height: 1.5;
+    margin: 1rem;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+} */
+
+/* .Omoss h2{
+    color: white;
+    font-size: 40px;
+    margin: 0 1rem;
+    font-family: "Josefin Sans", sans-serif;
+} */
+
+.Natur {
+    /* background: url("../images/startBg.jpg")  no-repeat center center fixed; */
+    /* background-size: cover; */
+
+    /* background: url("../images/c.webp")  no-repeat center center; */
+    background: url("../images/omosss.jpg")  no-repeat center center;
+    background-size: cover;
+
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+/* .Natur p{
+    width: 30%;
+    color: white;
+    line-height: 1.5;
+    margin: 1rem;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+} */
+
+/* .Natur h2{
+    color: white;
+    font-size: 40px;
+    margin: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+} */
+
+.Nyttigt{
+    /* background: url("../images/startBg.jpg")  no-repeat center center fixed; */
+    /* background-size: cover; */
+    background-color: green;
+    margin: 0;
+    padding: 0;
+
+    background: url("../images/a.webp")  no-repeat center center;
+    background-size: cover;
+}
+
+/* .Nyttigt p{
+    width: 30%;
+    color: white;
+    line-height: 1.5;
+    margin: 1rem;
+    font-size: 18px;
+    font-family: "Nunito", sans-serif;
+}
+
+.Nyttigt h2{
+    color: white;
+    font-size: 40px;
+    margin: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+} */
+
+
+
+
+/* **************Om Oss******************** */
+
+
+
+
+/* PETER KLASSEN FUSK??????????????????????????????????????????????? */
+
+.fusk {
+    background-color: rgba(133, 129, 123, 0.651);
+    height: calc(100% - 2rem);
+    max-width: 60ch;
+    padding: 1rem;
+
+    margin: 1rem;
+}
+
