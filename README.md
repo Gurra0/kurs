@@ -26,3 +26,7 @@ Jag använde mig kodsystemet UTF-8. Detta eftersom UTF-8 har blivit den vanligas
 ## Etik på en receptsida
 Det kan uppstå vissa problem när det gäller namngivning på olika saker som exempel maträtter.
 Ett exempel skulle kunna vara vad man kallade Chockladbollar förr i tiden här i sverige, det hade varit väldigt olämpligt nu för tiden att skriva det ordet.
+
+## Upphovsrätt
+
+Varför bilder från Unsplash?
