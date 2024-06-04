@@ -4,6 +4,8 @@
 
 Text
 
+![Test](test.png)
+
 ## Validering av HTML
 
 Text
